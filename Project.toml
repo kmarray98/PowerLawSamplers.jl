@@ -1,7 +1,7 @@
-name = "PowerLaws"
+name = "PowerLawSamplers"
 uuid = "ea71c90e-cdc5-43db-a32d-9c22f1535540"
 authors = ["Kieran Marray"]
-version = "1.0.0"
+version = "0.1.0"
 
 [compat]
 julia = "1"
