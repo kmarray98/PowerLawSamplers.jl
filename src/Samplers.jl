@@ -1,6 +1,3 @@
-using SpecialFunctions
-
-
 """
 Exact sampler for observations from discrete power law distribution from Appendix D of Clauset, Shalizi, and Newman -
 power law distributions in empirical data.
@@ -25,7 +22,7 @@ function doubling_up_sampler(α, x_min,u)
     while zeta(α, guess)/zeta(α, x_min) ≥ 1-u 
         guess += 1
     end
-    return(guess)
+    return(Int64(guess))
 end
 
 """
