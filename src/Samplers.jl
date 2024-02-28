@@ -1,6 +1,6 @@
 using SpecialFunctions
 
-function double_up_sampler(α, x_min,u) 
+function doubling_up_sampler(α, x_min,u) 
     guess = x_min
     while zeta(α, guess)/zeta(α, x_min) ≥ 1-u 
         g_1 = guess
@@ -14,7 +14,7 @@ function double_up_sampler(α, x_min,u)
 end
 
 
-function bounded_double_up_sampler(α, x_min,u, top_bound) 
+function bounded_doubling_up_sampler(α, x_min,u, top_bound) 
     guess = x_min
     while zeta(α, guess)/zeta(α, x_min) ≥ 1-u && guess < top_bound
         g_1 = guess
