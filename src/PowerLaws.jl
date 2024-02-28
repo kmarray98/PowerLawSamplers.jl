@@ -1,8 +1,9 @@
-module PowerLaws
+module PowerLawSamplers
 
 # Write your package code here.
-export double_up_sampler, bounded_double_up_sampler, inexact_sampler, pl_graph
+export doubling_up_sampler, bounded_doubling_up_sampler, inexact_sampler, pl_graph
 
-include("Samplers.jl", "RandomGraph.jl")
+include("Samplers.jl")
+include("RandomGraph.jl")
 
 end
