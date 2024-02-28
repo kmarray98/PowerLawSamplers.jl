@@ -16,6 +16,7 @@ a sample from a discrete power law distribution
 
 function doubling_up_sampler(α, x_min,u) 
     guess = x_min
+    g_1 = x_min
     while zeta(α, guess)/zeta(α, x_min) ≥ 1-u 
         g_1 = guess
         guess = 2*g_1
@@ -43,6 +44,7 @@ a sample from a discrete power law distribution
 
 function bounded_doubling_up_sampler(α, x_min,u, top_bound) 
     guess = x_min
+    g_1 = x_min
     while zeta(α, guess)/zeta(α, x_min) ≥ 1-u && guess < top_bound
         g_1 = guess
         guess = 2*g_1
@@ -69,6 +71,7 @@ a sample from a discrete power law distribution
 
 function inexact_sampler(α, x_min,u) 
     guess = x_min
+    g_1 = x_min
     while zeta(α, guess)/zeta(α, x_min) ≥ 1-u
         g_1 = guess
         guess = 2*g_1
