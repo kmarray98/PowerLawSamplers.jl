@@ -1,4 +1,4 @@
-# PowerLawSamplers.jl A Julia Package for sampling random variables from discrete power law distributions
+# PowerLawSamplers.jl - sampling random variables from discrete power law distributions
 
 Pure Julia implementations of the "doubling up" and "inexact" samplers for sampling from discrete power law
 distributions in Appendix D of Clauset, Newman, and Shalizi (2009). Also includes an doubling up sampler
