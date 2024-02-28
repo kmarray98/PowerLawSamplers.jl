@@ -1,6 +1,6 @@
-using PowerLaws
+using PowerLawSamplers
 using Test
 
-@testset "PowerLaws.jl" begin
-    # Write your tests here.
+@testset "PowerLawSamplers.jl" begin
+    @test PowerLawSamplers.doubling_up_sampler(1.1,1,0.01) == 2.0
 end
