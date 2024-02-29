@@ -1,6 +1,6 @@
 module PowerLawSamplers
 
-using SpecialFunctions, LinearAlgebra, Random
+using SpecialFunctions, LinearAlgebra, Random, StatsBase
 
 # Write your package code here.
 
