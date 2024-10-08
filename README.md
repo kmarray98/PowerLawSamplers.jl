@@ -23,7 +23,7 @@ sampler within the function because out-degree is discrete and truncated at the 
 ```
 using PowerLawSamplers, Plots, LinearAlgebra
 
-G = pl_random_graph(100, 2.3, 1) # adjacency matrix of directed random graph with power law out-degree distribution
+G = pl_graph(100, 2.3, 1) # adjacency matrix of directed random graph with power law out-degree distribution
 degs = vec(sum(G, dims=1))
 histogram(degs) # plotting out-degree distribution
 ```
